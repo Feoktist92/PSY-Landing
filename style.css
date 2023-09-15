@@ -681,7 +681,7 @@ a {
     background: var(--footerbg);
 }
 .footer > .container {
-    padding: 40px 60px 50px 120px;
+    padding: 40px 60px 50px 60px;
     display: grid;
     grid-template-areas:
         'name groups psy'
