@@ -1,0 +1,466 @@
+@media (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        max-width: 767px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .btn {
+        font-size: 18px;
+    }
+    .header > .container {
+        padding: 43px 17px 23px 17px;
+        grid-template-columns: 1fr;
+        font-size: 14px;
+    }
+    .header__menu {
+        margin: 0 auto;
+        gap: 0 20px;
+    }
+    .header__btn {
+        display: none;
+    }
+    .hero > .container {
+        padding: 50px 20px;
+    }
+    .hero__info {
+        padding: 0;
+        padding-top: 15px;
+    }
+    .hero__info-title {
+        font-size: 36px;
+    }
+    .hero__info-title::before {
+        content: url(./img/hero-line-mobile.svg);
+        top: 70px;
+        left: -10px;
+    }
+    .hero__info-text {
+        margin-top: 25px;
+        font-size: 16px;
+    }
+    .hero__info-text:last-child {
+        margin-top: 10px;
+    }
+    .hero__image {
+        place-self: start center;
+    }
+    .image {
+        height: 380px;
+        object-fit: contain;
+    }
+    .about {
+        background-image: url(./img/about-bg-mobile.png);
+    }
+    .about > .container {
+        padding: 60px 10px 80px 10px;
+    }
+    .about > .container > .title {
+        max-width: 120px;
+        margin: 0;
+    }
+    .about > .container > .title > span {
+        display: block;
+        margin-left: 60px;
+    }
+    .about__info {
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 30px 20px;
+    }
+    .supervision > .container {
+        padding: 140px 45px;
+        max-width: 780px;
+        text-align: center;
+    }
+    .supervision::before {
+        content: url(./img/supervision-left-mobile.svg);
+        top: 95px;
+        left: 0;
+    }
+    .supervision::after {
+        content: url(./img/supervision-right-mobile.svg);
+        bottom: 90px;
+        right: 0;
+    }
+    .supervision__bg {
+        position: relative;
+    }
+    .supervision__bg::before {
+        content: url(./img/supervision-bg.svg);
+        position: absolute;
+        top: 25px;
+        right: 10px;
+    }
+    .requests > .container > .title {
+        margin: 0;
+        max-width: 290px;
+    }
+    .requests > .container > .title > span {
+        display: block;
+        margin-left: 90px;
+    }
+    .requests__troubles {
+        margin-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 25px;
+        grid-template-columns: 1fr;
+    }
+    .requests__troubles > img {
+        display: none;
+    }
+    .requests__troubles-btn {
+        display: none;
+    }
+    .requests > .container > hr {
+        display: none;
+    }
+    .requests__info-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .requests__info-text {
+        margin-bottom: 30px;
+    }
+    .requests__info-list {
+        margin-bottom: 30px;
+    }
+    .requests__info-closing {
+        margin: 0;
+    }
+    .invividuals__title {
+        font-size: 18px;
+    }
+    .requests__individuals {
+        margin-top: 0;
+        margin-bottom: 100px;
+        padding-left: 25px;
+        grid-template-columns: 1fr;
+    }
+    .requests__individuals > img {
+        display: none;
+    }
+    .requests__individuals-btn {
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .requests__ps {
+        display: flex;
+        margin: 0 auto;
+        font-size: 12px;
+        max-width: 275px;
+        text-align: center;
+    }
+    .trust > .container {
+        padding: 60px 10px 80px 10px;
+    }
+    .trust__cards {
+        display: grid;
+        margin: 0 auto;
+        margin-top: 50px;
+        max-width: 310px;
+        grid-template-columns: 1fr;
+        gap: 20px 0;
+    }
+    .trust > .container > .title {
+        margin: 0;
+        max-width: 190px;
+    }
+    .trust > .container > .title > span {
+        display: block;
+        margin-left: 100px;
+    }
+    .trust__card {
+        padding: 25px 30px;
+    }
+    .trust__card::after {
+        content: url(./img/card-line-mobile.svg);
+        position: absolute;
+        top: 47px;
+        right: 0;
+    }
+    .trust__card-title {
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+    .price > .container {
+        margin-top: 100px;
+    }
+    .price > .container > .title {
+        margin: 0;
+        max-width: 225px;
+    }
+    .price > .container > .title > span {
+        display: block;
+        margin-left: 70px;
+    }
+    .price__online > img {
+        display: none;
+    }
+    .price__offline > img {
+        display: none;
+    }
+    .price__video > img {
+        display: none;
+    }
+    .price__title {
+        font-size: 18px;
+        max-width: 150px;
+    }
+    .price__title > span {
+        display: block;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .price__online,
+    .price__offline {
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 80px;
+        max-width: 350px;
+        padding-left: 30px;
+        grid-template-columns: 1fr;
+    }
+    .price__offline {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    .price__cards {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+        margin-left: 40px;
+        margin-bottom: 0;
+    }
+    .price__online-info > .price__btn,
+    .price__video-info > .price__btn {
+        display: none;
+    }
+    .price__offline-info > .price__cards {
+        margin-bottom: 50px;
+    }
+    .price__offline-info > .price__btn {
+        margin: 0 auto;
+    }
+    .price__card {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .price__card:last-child {
+        margin-bottom: 0;
+    }
+    .price__card > div:last-child {
+        margin-bottom: 0;
+        align-self: flex-end;
+    }
+    .price__card > div:nth-child(2) {
+        margin-bottom: 0;
+    }
+    .price__online > hr {
+        position: absolute;
+        left: 20%;
+        bottom: -40px;
+        width: 70%;
+    }
+    .price__offline > hr {
+        display: none;
+    }
+    .price__video {
+        margin: 0;
+        margin-left: 30px;
+        grid-template-columns: 1fr;
+    }
+    .price__video-card {
+        margin-bottom: 0;
+    }
+    .price__video-title {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .algorithm > .container {
+        margin-top: 70px;
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: minmax(252px, 1fr);
+        height: 345px;
+        gap: 30px 0px;
+        padding: 0;
+        padding-left: 30px;
+        padding-right: 20px;
+        text-align: start;
+        position: relative;
+    }
+    .algorithm > .container:before {
+        position: absolute;
+        content: url(./img/algorithm-steps-mobile.svg);
+        top: 0;
+        left: 30px;
+    }
+    .algorithm > hr {
+        display: none;
+    }
+    .algorithm__step {
+        padding-left: 50px;
+    }
+    .algorithm__step-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .algorithm__step > img {
+        display: none;
+    }
+    .memo {
+        background-image: url(./img/memo-bg-mobile.png);
+    }
+    .memo > .container {
+        padding: 60px 10px 80px 10px;
+    }
+    .memo > .container > .title {
+        margin: 0;
+        max-width: 300px;
+    }
+    .memo > .container > .title > span {
+        display: block;
+        margin-left: 70px;
+    }
+    .memo__text {
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        padding: 25px;
+        text-align: start;
+        max-width: 445px;
+        background: rgba(249, 249, 255, 0.7);
+    }
+    .diploma > .container {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .diploma > .container > .title {
+        margin-left: 10px;
+        max-width: 300px;
+    }
+    .diploma > .container > .title > span {
+        display: block;
+        margin-left: 63px;
+    }
+    .slideshow-container {
+        max-width: 100%;
+        margin-top: 50px;
+        padding-bottom: 140px;
+    }
+    .prev > img,
+    .next > img {
+        width: 30px;
+        height: 30px;
+    }
+    .prev,
+    .next {
+        top: calc(50% - 80px);
+    }
+    .prev {
+        left: 15px;
+    }
+    .next {
+        right: 15px;
+    }
+    .dots-container::before {
+        content: url(./img/diploma-line-mobile.svg);
+        top: -120px;
+        left: calc((100% - 330px) / 2);
+    }
+    .contacts {
+        padding: 0 10px;
+        padding-top: 70px;
+    }
+    .contacts > hr {
+        display: none;
+    }
+    .contacts > .container > .title {
+        margin: 0;
+        max-width: 265px;
+    }
+    .contacts > .container > .title > span {
+        display: block;
+        margin-left: 125px;
+    }
+    .contacts__info {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .footer > .container {
+        padding: 40px 10px 55px 10px;
+        grid-template-areas:
+            'name psy'
+            'desc psy'
+            'groups psy'
+            'location psy';
+    }
+    .footer__info {
+        margin: 0;
+    }
+    .footer__info-name {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .footer__info-desc {
+        max-width: 270px;
+        margin-bottom: 25px;
+    }
+    .footer__groups {
+        place-self: start;
+        margin-bottom: 25px;
+    }
+    .footer__psy {
+        width: 80px;
+        height: 80px;
+        place-self: center;
+    }
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0px;
+        bottom: 60px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 560px) {
+    .hero > .container {
+        display: grid;
+        padding: 65px 10px 160px 10px;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+    }
+    .hero__image {
+        margin-top: 40px;
+        place-self: start end;
+    }
+    .hero::before {
+        display: none;
+    }
+    .hero__info-title::before {
+        top: 22px;
+        left: 0px;
+    }
+    .hero__image::before {
+        display: initial;
+        content: url(./img/hero-lines-mobile.svg);
+        position: absolute;
+        top: -90px;
+        right: 0;
+    }
+}
+@media (max-width: 371px) {
+    .algorithm > .container:before {
+        position: absolute;
+        content: url(./img/algorithm-steps-mobile.svg);
+        top: 35px;
+        left: 30px;
+    }
+}

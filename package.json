@@ -1,0 +1,24 @@
+{
+  "name": "psy-landing",
+  "version": "1.0.0",
+  "private": "false",
+  "homepage": "feoktist92.github.io/psy-landing",
+  "description": "Отзывчивая верстка макета на гридах",
+  "main": "./src/index.html",
+  "author": "Igor Feoktistov",
+  "license": "ISC",
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.15",
+    "postcss-modules": "^6.0.0"
+  },
+  "browserslist": [
+    "last 5 version",
+    "ie 10"
+  ],
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}
