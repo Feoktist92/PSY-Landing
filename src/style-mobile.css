@@ -1,3 +1,42 @@
+@media (max-width: 850px) {
+    .footer > .container {
+        padding: 40px 10px 55px 10px;
+        grid-template-areas:
+            'name psy'
+            'desc psy'
+            'groups psy'
+            'location psy';
+    }
+    .footer__info {
+        margin: 0;
+    }
+    .footer__info-name {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .footer__info-desc {
+        max-width: 270px;
+        margin-bottom: 25px;
+    }
+    .footer__groups {
+        place-self: start;
+        margin-bottom: 25px;
+    }
+    .footer__psy {
+        width: 80px;
+        height: 80px;
+        place-self: center;
+    }
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0px;
+        bottom: 60px;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 767px) {
     body {
         font-size: 16px;
@@ -391,42 +430,6 @@
     .contacts__info {
         margin-top: 50px;
         margin-bottom: 100px;
-    }
-    .footer > .container {
-        padding: 40px 10px 55px 10px;
-        grid-template-areas:
-            'name psy'
-            'desc psy'
-            'groups psy'
-            'location psy';
-    }
-    .footer__info {
-        margin: 0;
-    }
-    .footer__info-name {
-        font-size: 28px;
-        margin-bottom: 10px;
-    }
-    .footer__info-desc {
-        max-width: 270px;
-        margin-bottom: 25px;
-    }
-    .footer__groups {
-        place-self: start;
-        margin-bottom: 25px;
-    }
-    .footer__psy {
-        width: 80px;
-        height: 80px;
-        place-self: center;
-    }
-    .social-icons {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        right: 0px;
-        bottom: 60px;
-        justify-content: center;
     }
 }
 

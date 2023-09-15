@@ -714,6 +714,7 @@ a {
     margin-right: 30px;
 }
 .footer__psy {
+    margin-left: 180px;
     grid-area: psy;
     place-self: end end;
 }
