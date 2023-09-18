@@ -53,6 +53,7 @@ a {
 }
 .header {
     background: rgba(202, 202, 209, 0.3);
+    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
 }
 .sticky {

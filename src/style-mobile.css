@@ -220,6 +220,7 @@
         font-size: 16px;
     }
     .price > .container {
+        padding: 0;
         margin-top: 100px;
     }
     .price > .container > .title {
@@ -369,6 +370,7 @@
         background: rgba(249, 249, 255, 0.7);
     }
     .diploma > .container {
+        padding: 0;
         margin-top: 100px;
         margin-bottom: 50px;
     }
