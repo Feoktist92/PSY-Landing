@@ -23,17 +23,10 @@
         margin-bottom: 25px;
     }
     .footer__psy {
+        margin-left: 0;
         width: 80px;
         height: 80px;
         place-self: center;
-    }
-    .social-icons {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        right: 0px;
-        bottom: 60px;
-        justify-content: center;
     }
 }
 
@@ -430,6 +423,14 @@
     .contacts__info {
         margin-top: 50px;
         margin-bottom: 100px;
+    }
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 10px;
+        bottom: 60px;
+        justify-content: center;
     }
 }
 
