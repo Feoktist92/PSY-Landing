@@ -19,6 +19,8 @@
         margin-bottom: 25px;
     }
     .footer__groups {
+        -ms-grid-row-align: start;
+        -ms-grid-column-align: start;
         place-self: start;
         margin-bottom: 25px;
     }
@@ -26,6 +28,8 @@
         margin-left: 0;
         width: 80px;
         height: 80px;
+        -ms-grid-row-align: center;
+        -ms-grid-column-align: center;
         place-self: center;
     }
 }
@@ -45,6 +49,7 @@
     }
     .header > .container {
         padding: 43px 17px 23px 17px;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         font-size: 14px;
     }
@@ -78,10 +83,13 @@
         margin-top: 10px;
     }
     .hero__image {
+        -ms-grid-row-align: start;
+        -ms-grid-column-align: center;
         place-self: start center;
     }
     .image {
         height: 380px;
+        -o-object-fit: contain;
         object-fit: contain;
     }
     .about {
@@ -139,6 +147,7 @@
         margin-top: 50px;
         padding-bottom: 50px;
         padding-left: 25px;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
     .requests__troubles > img {
@@ -170,6 +179,7 @@
         margin-top: 0;
         margin-bottom: 100px;
         padding-left: 25px;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
     .requests__individuals > img {
@@ -181,6 +191,8 @@
         margin-bottom: 10px;
     }
     .requests__ps {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin: 0 auto;
         font-size: 12px;
@@ -191,10 +203,12 @@
         padding: 60px 10px 80px 10px;
     }
     .trust__cards {
+        display: -ms-grid;
         display: grid;
         margin: 0 auto;
         margin-top: 50px;
         max-width: 310px;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         gap: 20px 0;
     }
@@ -256,6 +270,7 @@
         margin-bottom: 80px;
         max-width: 350px;
         padding-left: 30px;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
     .price__offline {
@@ -263,6 +278,7 @@
         margin-bottom: 50px;
     }
     .price__cards {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         margin-top: 30px;
         margin-left: 40px;
@@ -279,7 +295,12 @@
         margin: 0 auto;
     }
     .price__card {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         margin-bottom: 20px;
     }
@@ -288,6 +309,7 @@
     }
     .price__card > div:last-child {
         margin-bottom: 0;
+        -ms-flex-item-align: end;
         align-self: flex-end;
     }
     .price__card > div:nth-child(2) {
@@ -305,6 +327,7 @@
     .price__video {
         margin: 0;
         margin-left: 30px;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
     .price__video-card {
@@ -317,7 +340,9 @@
     .algorithm > .container {
         margin-top: 70px;
         margin-bottom: 100px;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: minmax(252px, 1fr);
         grid-template-columns: minmax(252px, 1fr);
         height: 345px;
         gap: 30px 0px;
@@ -427,24 +452,37 @@
         margin-bottom: 100px;
     }
     .social-icons {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         position: fixed;
         right: 10px;
         bottom: 60px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 }
 
 @media (max-width: 560px) {
     .hero > .container {
+        display: -ms-grid;
         display: grid;
         padding: 65px 10px 160px 10px;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
     .hero__image {
         margin-top: 40px;
+        -ms-grid-row-align: start;
+        -ms-grid-column-align: end;
         place-self: start end;
     }
     .hero::before {
