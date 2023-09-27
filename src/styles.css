@@ -32,6 +32,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -44,10 +45,12 @@ a {
     cursor: pointer;
     border: 1.1px solid var(--blue);
     text-align: center;
+    transition: all 0.2s ease-in;
 }
 .btn:hover {
     background-color: var(--hover);
 }
+
 .title {
     color: var(--blue);
     font-size: 46px;
@@ -96,14 +99,12 @@ a {
 }
 .header__link {
     display: inline-block;
+    transition: all 0.3s ease-in-out;
 }
 .header__link:hover {
     -webkit-transform: scale(120%);
     -ms-transform: scale(120%);
     transform: scale(120%);
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
 }
 .header__btn {
     -ms-grid-row-align: center;
@@ -782,6 +783,8 @@ a {
 .footer__info-name {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
+    grid-row: 1;
+    grid-column: 1;
     grid-area: name;
     color: #5f90d9;
     font-size: 32px;
@@ -791,6 +794,8 @@ a {
 .footer__info-desc {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
+    grid-row: 2;
+    grid-column: 1;
     max-width: 305px;
     grid-area: desc;
     color: #dbdada;
@@ -799,13 +804,17 @@ a {
 .footer__info-location {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
+    grid-row: 3;
+    grid-column: 1;
     grid-area: location;
     color: #dbdada;
 }
 .footer__groups {
     -ms-grid-row: 1;
+    grid-row: 1;
     -ms-grid-row-span: 3;
     -ms-grid-column: 2;
+    grid-column: 2;
     grid-area: groups;
     -ms-grid-row-align: end;
     -ms-grid-column-align: center;
@@ -816,8 +825,10 @@ a {
 }
 .footer__psy {
     -ms-grid-row: 1;
+    grid-row: 1;
     -ms-grid-row-span: 3;
     -ms-grid-column: 3;
+    grid-column: 3;
     margin-left: 180px;
     grid-area: psy;
     -ms-grid-row-align: end;
