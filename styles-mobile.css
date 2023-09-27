@@ -472,7 +472,7 @@
     .hero > .container {
         display: -ms-grid;
         display: grid;
-        padding: 65px 10px 160px 10px;
+        padding: 30px 10px 80px;
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         -webkit-box-pack: justify;
@@ -498,6 +498,15 @@
         position: absolute;
         top: -90px;
         right: 0;
+    }
+    .price > .container {
+        margin-top: 60px;
+    }
+    .algorithm > .container {
+        margin-bottom: 70px;
+    }
+    .diploma > .container {
+        margin-top: 60px;
     }
 }
 @media (max-width: 371px) {
