@@ -21,7 +21,7 @@ body {
 }
 .section {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(80px);
     transition: opacity 1s ease, transform 1s ease;
 }
 .container {

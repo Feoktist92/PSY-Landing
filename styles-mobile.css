@@ -42,7 +42,7 @@
         max-width: 767px;
     }
     .section {
-        transform: translateY(50px);
+        transform: translateY(40px);
     }
     .title {
         font-size: 28px;
