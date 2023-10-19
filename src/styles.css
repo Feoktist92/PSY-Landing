@@ -19,6 +19,11 @@ body {
     font-weight: 300;
     scroll-behavior: smooth;
 }
+.section {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease, transform 1s ease;
+}
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -99,12 +104,10 @@ a {
 }
 .header__link {
     display: inline-block;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.2s ease-in; */
 }
 .header__link:hover {
-    -webkit-transform: scale(120%);
-    -ms-transform: scale(120%);
-    transform: scale(120%);
+    border-bottom: 2px solid var(--blue);
 }
 .header__btn {
     -ms-grid-row-align: center;
@@ -273,8 +276,7 @@ a {
 .requests > .container > hr {
     position: absolute;
     top: 58%;
-    left: 10%;
-    width: calc(100% - 120px);
+    width: 100%;
     color: #cecece;
     z-index: -1;
 }
