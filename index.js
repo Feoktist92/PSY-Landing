@@ -1,3 +1,27 @@
+// Функция для обработки изменения видимости секций
+function handleIntersection(entries, observer) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target); // Отключаем наблюдение после анимации
+        }
+    });
+}
+
+// Создаем объект Intersection Observer
+const sectionObserver = new IntersectionObserver(handleIntersection, {
+    root: null, // Область наблюдения (null - вся видимая область)
+    rootMargin: '0px', // Маржины
+    threshold: 0.2, // Порог видимости
+});
+
+// Наблюдаем за каждой секцией и добавляем их к наблюдению
+const sections = document.querySelectorAll('.section');
+sections.forEach((section) => {
+    sectionObserver.observe(section);
+});
+
 var slideIndex = 1;
 showSlides(slideIndex);
 function plusSlides(n) {
